@@ -1,0 +1,406 @@
+<html>
+<head>
+
+</head>
+<body>
+<h1 style="text-align:center">This is a postano test site</h1>
+
+<script class="postano-controls-feed-selector-v2" type="application/json"></script>
+<style>
+
+  /* POSTANO THEME */
+
+  .postano-posts.postano-show {
+    background:transparent!important;
+  }
+
+  @media (max-width: 1500px) {
+    .postano-cardNest {
+     top: 20px;
+   }
+ }
+
+ .postano-post, .postano-cardContainer{
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  border-radius:0!important;
+  position:relative;
+  padding:0!important;
+  font-family:'Ubuntu', arial, sans-serif;
+  font-size:15px!important;
+}
+
+.postano-postNest:before{
+  content:'\f16d';
+  font-family:'FontAwesome';
+  height:23px;
+  width:23px;
+  position:absolute;
+  opacity:.5;
+  color:#fff;
+  top:20px;
+  right:20px;
+  z-index:1;
+  font-size:23px;
+}
+
+.postano-postNest{
+  margin:2px!important;
+  position:relative;
+  -webkit-box-shadow: none!important;
+  -webkit-box-shadow: none!important;
+  box-shadow:  none!important;
+  box-shadow:  none!important;
+  overflow:hidden;
+}
+
+/* LAYOUT */
+
+/* repsonsive: 7 cols */
+.postano-posts.postano-col7 .postano-post{
+  width: 33.3%!important;
+}
+
+/* repsonsive: 6 cols */
+.postano-posts.postano-col6 .postano-post{
+  width: 33.3%!important;
+}
+
+/* repsonsive: 5 cols */
+.postano-posts.postano-col5 .postano-post{
+  width: 33.3%!important;
+}
+
+/* repsonsive: 4 cols */
+.postano-posts.postano-col4 .postano-post{
+  width: 33.3%!important;
+}
+
+/* repsonsive: 3 cols */
+.postano-posts.postano-col3 .postano-post{
+  width: 33.3%!important;
+}
+
+/* repsonsive: 2 cols */
+.postano-posts.postano-col2 .postano-post{
+  width: 50%!important;
+}
+
+/* repsonsive: 1 cols */
+.postano-posts.postano-col1 .postano-post{
+  width: 100%!important;
+}
+
+/* COLORS */
+
+/* background colors */
+
+.postano-userContainer, .postano-textArea, .postano-postFooter{
+  background:none!important;
+  background:rgba(173,83,155,.7);
+}
+
+/* primary text color */
+
+.postano-textArea .postano-title{
+  color:#fff;
+}
+
+/* primary link color */
+
+.postano-posts .postano-textArea a, .postanowrapper .postano-icon:after, .postano-meta .postano-post-action:after{
+  color:#fff;
+}
+
+/* ELEMENT STYLES */
+
+/* STANDARD (TEXT AND IMAGE) POST PREFERENCES */
+
+.postano-posts .postano-screenName{
+ display:none!important;
+}
+
+.postano-post .postano-meta .postano-date {
+  display:none!important;
+}
+
+.postano-userWrap{
+ display:none!important;
+}
+
+.postano-userIcon{
+ display:none!important;
+}
+
+/* STANDARD (TEXT AND IMAGE) POST STYLES */
+
+/* image & text*/
+
+.postano-textArea {
+ position: absolute;
+ top:100%;
+ padding:50px 30px;
+ width:100%;
+ overflow:hidden;
+ font-family:'UbuntuLight', arial, sans-serif;
+ font-size:15px;
+ line-height:1em;
+ -webkit-transition: top 200ms cubic-bezier(0.165, 0.840, 0.440, 1.000);
+ -moz-transition: top 200ms cubic-bezier(0.165, 0.840, 0.440, 1.000);
+ -o-transition: top 200ms cubic-bezier(0.165, 0.840, 0.440, 1.000);
+ transition: top 200ms cubic-bezier(0.165, 0.840, 0.440, 1.000);
+   z-index:20;
+}
+
+.postano-post:hover .postano-textArea {
+ top:0;
+}
+
+.postanowrapper .postano-postNest{
+  -webkit-border-radius: 0!important;
+  -moz-border-radius: 0!important;
+  border-radius: 0!important;
+}
+
+/* vote */
+
+.postano-post .postano-userContainer {
+  position:absolute;
+  height: 75px;
+  bottom:0px;
+  left:30px;
+  text-transform:uppercase;
+  -webkit-border-radius: 0!important;
+  -moz-border-radius: 0!important;
+  border-radius: 0!important;
+  z-index: 2000;
+  -webkit-transition: bottom 200ms cubic-bezier(0.165, 0.840, 0.440, 1.000);
+  -moz-transition: bottom 200ms cubic-bezier(0.165, 0.840, 0.440, 1.000);
+  -o-transition: bottom 200ms cubic-bezier(0.165, 0.840, 0.440, 1.000);
+  transition: bottom 200ms cubic-bezier(0.165, 0.840, 0.440, 1.000);
+}
+
+.postano-post:hover .postano-userContainer{
+  bottom:0;
+}
+
+.postano-post:hover .postano-imageContainer:before{
+  content:"";
+  position:absolute;
+  top:0;
+  bottom:0;
+  right:0;
+  left:0;
+  background: #000;
+  opacity:.6;
+  z-index:15;
+}
+
+/* postnest/postano meta override*/
+
+.postano-post .postano-meta {
+  left:0;
+  top:0;
+}
+
+.postano-post .postano-meta .postano-postService:after {
+  display:none!important;
+}
+
+a.postano-post-action, .entry-content a.postano-post-action{
+max-width:none!important;
+}
+
+.postano-meta .postano-post-action:before{
+  content:"\f004";
+  font-family:'FontAwesome';
+  font-size:22px;
+  line-height: 75px;
+  color:#f04132;
+  padding-right:8px;
+}
+
+.postano-meta .postano-post-action:after{
+  content:"Vote";
+  font-family:'Ubuntu', arial, sans-serif;
+  font-weight:bold;
+  font-size:25px;
+  line-height: 75px;
+}
+/* /vote */
+
+
+/* social media icons */
+
+.postano-post .postano-postFooter{
+ position:absolute;
+ bottom:-75px;
+ right:30px;
+ height:75px;
+ border-top:0;
+ background:transparent!important;
+ padding:0;
+ -webkit-transition: bottom 200ms cubic-bezier(0.165, 0.840, 0.440, 1.000);
+ -moz-transition: bottom 200ms cubic-bezier(0.165, 0.840, 0.440, 1.000);
+ -o-transition: bottom 200ms cubic-bezier(0.165, 0.840, 0.440, 1.000);
+ transition: bottom 200ms cubic-bezier(0.165, 0.840, 0.440, 1.000);
+  z-index:20;
+}
+
+.postano-post:hover .postano-postFooter{
+  bottom:0;
+  border:0!important;
+}
+
+.postano-socialButtons li {
+  margin-right:0!important;
+  margin-left:10px;
+}
+
+.postanowrapper .postano-icon:after{
+  font-family:'FontAwesome';
+  height:75px;
+  line-height:75px;
+  font-size:25px!important;
+}
+
+.postanowrapper .postano-icon-facebook:after, .postanowrapper .postano-icon-facebook_page:after{
+  content: "\f082";
+}
+
+.postanowrapper .postano-icon-twitter:after, .postanowrapper .postano-icon-twitter_page:after{
+  content: "\f099";
+}
+
+.postanowrapper .postano-icon-pinterest:after, .postanowrapper .postano-icon-pinterest_page:after{
+  content: "\f0d2";
+}
+
+/* TEXT ONLY POST PREFERENCES */
+
+.postano-post.postano-text-only  {
+  display:none;
+}
+
+/* CARD */
+
+/* CARD PREFERENCES */
+
+.postano-meta.postano-triangle-instagram_tag{
+  display:none;
+}
+
+.postano-cardNest .postano-date{
+  display:none;
+}
+
+.postano-cardNest .postano-userIcon{
+  display:block;
+}
+
+/* CARD STYLES */
+
+.postano-cardContainer .postano-cardNest{
+  padding:25px;
+}
+
+.postano-cardContainer .postano-post-action:after{
+  color:#777;
+}
+
+.postano-cardContainer .postano-screenName {
+  color: #222 !important;
+}
+
+.postano-cardWrapper .postano-userContainer{
+  background:#fff;
+  height:auto;
+}
+
+.postano-cardSecondary{
+  overflow:visible;
+}
+
+.postano-cardNest .postano-postSourceLink {
+ color:#fff;
+ font-size:0;
+}
+
+.postano-cardNest .postano-postSourceLink:before {
+ content:"\f004"!important;
+ font-family:'FontAwesome';
+ font-weight:bold;
+ font-size:23px;
+ height:20px;
+ line-height:20px;
+ color:#f04132;
+}
+
+.postano-cardNest .postano-postSourceLink:after{
+  content:"Vote";
+  font-weight:bold;
+  font-size:16px;
+ height:20px;
+ line-height:20px;
+ color:#f04132;
+}
+
+.postano-cardContainer .postano-cardPrimary{
+  margin-right:25px;
+}
+
+.postano-cardContainer .postano-cardText{
+  font-size:18px;
+  line-height:1.3em;
+  padding-top:1.3em;
+   padding-bottom:1.3em;
+}
+
+.postanowrapper .postano-cardContainer .postano-icon:after{
+  height:auto!important;
+  line-height:1em!important;
+}
+
+.postano-cardNest .postano-socialButtons li{
+  padding-right:0;
+}
+
+  @font-face {
+    font-family: 'FontAwesome';
+    src: url('font-awesome/fonts/fontawesome-webfont.eot'); /* IE9 Compat Modes */
+    src: url('font-awesome/fonts/fontawesome-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('font-awesome/fonts/fontawesome-webfont.woff') format('woff'), /* Modern Browsers */
+    url('font-awesome/fonts/fontawesome-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+    url('font-awesome/fonts/fontawesome-webfont.svg#94c035cfa6668cd7aea4b33676e6f937') format('svg'); /* Legacy iOS */
+
+    font-style:   normal;
+    font-weight:  400;
+  }
+
+</style>
+<!-- /postano embed -->
+<div class="postanowrapper js-postano-loaded"
+data-postano-account-id="4370"
+data-postano-project-id="44253"
+data-postano-product-id="6347"
+data-postano-posts-data-source="v2"
+data-postano-width="100%"
+data-postano-height="100%"
+data-postano-items-first-page="50"
+data-postano-items-per-page="50"
+data-postano-enable-instascroll="false"
+data-postano-autoload-new-posts="true"
+data-sort="moderated_time"
+data-postano-skip-jquery="false">
+</div>
+<script>
+  var server = "//postano-embed.s3.amazonaws.com/prod";
+
+  (function(id) {
+    if (document.getElementById(id)) return;
+    var js = document.createElement('script'); js.id = id; js.src = server + '\/scripts\/embed.js';
+    document.body.appendChild(js);
+  }('postano-embed'));
+</script>
+</body>
+
+</html>
