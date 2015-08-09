@@ -134,6 +134,16 @@
 				maptype : 'roadmap'							   // Maptype: roadmap, satellite, hybrid, terrain
 			},
 
+			objGoogleMap_2 : {
+				address: 'Melbourne, Australia',					   // City, County
+				markers: [
+					{'address' : '25 Henning Avenue Lynbrook'}		   // Street
+				],
+				zoom: 15,									   // 0 - 21	
+				scrollwheel: false,							   // Boolean: true / false
+				maptype : 'roadmap'							   // Maptype: roadmap, satellite, hybrid, terrain
+			},
+
 			/* ---------------------------------------------------- */
 			/*	Image Slider										*/
 			/* ---------------------------------------------------- */

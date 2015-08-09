@@ -149,6 +149,13 @@
 				}
 			}
 
+			if ($('.google_map_2').length) {
+				var $gmap = $('.google_map_2');
+				if (window.google.maps) {
+					$gmap.gMap(CONFIG.objGoogleMap_2);
+				}
+			}
+
 			/* ---------------------------------------------------- */
 			/*	Fancybox											*/
 			/* ---------------------------------------------------- */
@@ -609,7 +616,7 @@
 					} else { this.layer.children().layerSlider(CONFIG.objLayerSlider); }
 				}
 				
-				self.stickyHeader.call(self, $window);
+				//self.stickyHeader.call(self, $window);
 				
 				// ScrollSpy 
 				$(window).on('load.scrollSpy', function () {
@@ -620,7 +627,7 @@
 					// Back To Top
 					self.backTopScrollHandler.call(self, e.currentTarget);
 					// Sticky Header
-					self.stickyHeader.call(self, e.currentTarget);
+					//self.stickyHeader.call(self, e.currentTarget);
 				});
 				
 				if (!this.touch) {
@@ -866,9 +873,9 @@
 			removeAttrNav: function() {
 				if ($(window).width() > 959) { this.nav.attr('style', ''); }
 			},
-			stickyHeader: function (win) {
-				$(win).scrollTop() > 0 ? this.header.addClass('header-shrink') : this.header.removeClass('header-shrink');
-			},
+			// stickyHeader: function (win) {
+			// 	$(win).scrollTop() > 0 ? this.header.addClass('header-shrink') : this.header.removeClass('header-shrink');
+			// },
 			backTopScrollHandler: function (win) {
 				$(win).scrollTop() > 200 ? this.backTop.fadeIn(400) : this.backTop.fadeOut(400);
 			},
