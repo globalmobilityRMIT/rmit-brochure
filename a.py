@@ -1,6 +1,6 @@
 import glob, datetime, os
 
-files = glob.glob('./images/universities/*')
+files = glob.glob('./images/university-logos/*')
 
 for f in files:
-	os.rename(f,f[:-4]+f[-3:])
+	os.rename(f,f.lower()+"_")
